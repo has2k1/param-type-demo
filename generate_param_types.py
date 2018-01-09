@@ -61,6 +61,8 @@ def all_docstrings_in_path(top_path):
 
 def all_parameter_sections(top_path):
     for doc in all_docstrings_in_path(top_path):
+        if not doc:
+            continue
         section = docstring_section_lines(doc, 'parameters')
         if section:
             yield section
@@ -79,7 +81,7 @@ def main():
         'numpy': '/home/hassan/scm/python/numpy/numpy',
         'scipy': '/home/hassan/scm/python/scipy/scipy',
         'matplotlib': '/home/hassan/scm/python/matplotlib/lib',
-        'matplotlib': '/home/hassan/scm/python/pandas/pandas',
+        'pandas': '/home/hassan/scm/python/pandas/pandas',
         'sklearn': '/home/hassan/scm/python/scikit-learn/sklearn',
         'plotnine': '/home/hassan/scm/python/plotnine/plotnine',
         'plydata': '/home/hassan/scm/python/plydata/plydata',

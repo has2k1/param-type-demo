@@ -97,6 +97,7 @@
 <li class="toctree-l1"><a class="reference internal" href="matplotlib-param-types.html">matplotlib</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mizani-param-types.html">mizani</a></li>
 <li class="toctree-l1"><a class="reference internal" href="numpy-param-types.html">numpy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pandas-param-types.html">pandas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plotnine-param-types.html">plotnine</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plydata-param-types.html">plydata</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">scipy</a></li>
@@ -179,17 +180,29 @@
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
+<li>float</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>str, optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">str</a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>str, optional, deprecated</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">str</a>, optional, deprecated</li>
 </ul>
 </td>
 </tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>&quot;frozen&quot; distribution object</li>
+<li>&quot;frozen&quot; distribution <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)">object</a></li>
+</ul>
+</td>
+</tr>
 <tr class="row-even"><td><ul class="first last simple">
 <li>'C', optional</li>
 <li>'C', optional</li>
@@ -211,6 +224,18 @@
 <tr class="row-odd"><td><ul class="first last simple">
 <li>(# of dimensions, # of points)-array</li>
 <li>(# of dimensions, # of points)-array</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>(# of points,)-array</li>
+<li>(# of points,)-array</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>() or (1,) or (K,) ndarray</li>
+<li>() or (1,) or (K,) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
 </ul>
 </td>
 </tr>
@@ -227,20 +252,44 @@
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
+<li>(2,) ndarray</li>
+<li>(2,) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>(2,) tuple of boolean, optional</li>
 <li>(2,) <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.6)">tuple</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.6)">boolean</a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>(2,2) array_like, optional</li>
 <li>(2,2) <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>(4,) array_like, optional</li>
 <li>(4,) <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, optional</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>(K, 2) ndarray</li>
+<li>(K, 2) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>(K, N) ndarray</li>
+<li>(K, N) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>(M*P, N*Q) ndarray</li>
+<li>(M*P, N*Q) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
 </ul>
 </td>
 </tr>
@@ -251,14 +300,38 @@
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
+<li>(M, K) ndarray</li>
+<li>(M, K) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>(M, M) array_like</li>
 <li>(M, M) <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>(M, M) array_like, optional</li>
 <li>(M, M) <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, optional</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>(M, M) double or complex ndarray</li>
+<li>(M, M) <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">double</a> or <a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.6)">complex</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>(M, M) float or complex ndarray</li>
+<li>(M, M) <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a> or <a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.6)">complex</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>(M, M) ndarray</li>
+<li>(M, M) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
 </ul>
 </td>
 </tr>
@@ -269,20 +342,44 @@
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>(M, N) complex ndarray</li>
+<li>(M, N) <a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.6)">complex</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
 <li>(M, N) ndarray</li>
 <li>(M, N) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>(M,) array_like</li>
 <li>(M,) <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a></li>
 </ul>
 </td>
 </tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>(M,) ndarray</li>
+<li>(M,) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>(M,) or (2, M) double or complex ndarray</li>
+<li>(M,) or (2, M) <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">double</a> or <a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.6)">complex</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
 <li>(M,) or (M, K) array_like</li>
 <li>(M,) or (M, K) <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>(M,) or (M, K) ndarray</li>
+<li>(M,) or (M, K) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
 </ul>
 </td>
 </tr>
@@ -293,20 +390,32 @@
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>(M,) or (M, N) ndarray</li>
+<li>(M,) or (M, N) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
 <li>(M,) or (N,) array_like</li>
 <li>(M,) or (N,) <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>(M,) sequence</li>
 <li>(M,) <a class="reference external" href="https://docs.python.org/3/glossary.html#term-sequence" title="(in Python v3.6)"><span>sequence</span></a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>(M,M) array_like or sparse matrix</li>
 <li>(M,M) <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> or <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.spmatrix.html#scipy.sparse.spmatrix" title="(in SciPy v1.0.0)">sparse</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>(M,M) ndarray</li>
+<li>(M,M) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
 </ul>
 </td>
 </tr>
@@ -347,26 +456,50 @@
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
+<li>(N, N) ndarray</li>
+<li>(N, N) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>(N,) array of ints or (2,N) ndarray of ints</li>
+<li>(N,) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">ints</a> or (2,N) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">ints</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>(N,) array of ints or (D,N) ndarray of ints</li>
+<li>(N,) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">ints</a> or (D,N) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">ints</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>(N,) array_like</li>
 <li>(N,) <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>(N,) array_like or list of (N,) array_like</li>
 <li>(N,) <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.6)">list</a> of (N,) <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>(N,) array_like, bool</li>
 <li>(N,) <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.6)">bool</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>(N,) array_like, optional</li>
 <li>(N,) <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, optional</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>(N,) float ndarray</li>
+<li>(N,) <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
 </ul>
 </td>
 </tr>
@@ -383,8 +516,20 @@
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
+<li>(N,) or (N, K) ndarray</li>
+<li>(N,) or (N, K) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>(N,K) array_like</li>
 <li>(N,K) <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>(N-1, N-1) ndarray</li>
+<li>(N-1, N-1) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
 </ul>
 </td>
 </tr>
@@ -461,8 +606,44 @@
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>(int, int)</li>
+<li>(<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a>)</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>(len(c), len(r)) ndarray</li>
+<li>(len(c), len(r)) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>(m+1, n+1) array</li>
+<li>(m+1, n+1) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
 <li>(m, n) array_like</li>
 <li>(m, n) <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>(m, n) ndarray</li>
+<li>(m, n) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>(min(M, N),) ndarray</li>
+<li>(min(M, N),) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>(min(M,N),) ndarray or None</li>
+<li>(min(M,N),) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> or None</li>
 </ul>
 </td>
 </tr>
@@ -473,8 +654,56 @@
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>(n, n) ndarray</li>
+<li>(n, n) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>(numtaps,) ndarray</li>
+<li>(numtaps,) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>(nx + 1) ndarray</li>
+<li>(nx + 1) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>(nx, ny) ndarray</li>
+<li>(nx, ny) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>(ny + 1) ndarray</li>
+<li>(ny + 1) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>(self.d, <cite>size</cite>) ndarray</li>
+<li>(self.d, <cite>size</cite>) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>(sequence of floats,ints), optional</li>
+<li>(<a class="reference external" href="https://docs.python.org/3/glossary.html#term-sequence" title="(in Python v3.6)"><span>sequence</span></a> of floats,ints), optional</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
 <li>(u + 1, M) array_like</li>
 <li>(u + 1, M) <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>(u + 1, M) ndarray</li>
+<li>(u + 1, M) <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
 </ul>
 </td>
 </tr>
@@ -503,8 +732,20 @@
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
+<li>1-D ndarray</li>
+<li>1-D <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>1-D ndarray of float</li>
 <li>1-D <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>1-D ndarray of ints</li>
+<li>1-D <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">ints</a></li>
 </ul>
 </td>
 </tr>
@@ -515,14 +756,38 @@
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
+<li>1-d ndarray</li>
+<li>1-d <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>1D array</li>
 <li>1D <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>1D array_like</li>
 <li>1D <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>1D ndarray</li>
+<li>1D <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>1d float array</li>
+<li>1d <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>1d float ndarray</li>
+<li>1d <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
 </ul>
 </td>
 </tr>
@@ -533,26 +798,38 @@
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>1d-array</li>
+<li>1d-array</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
 <li>2-D ndarray</li>
 <li>2-D <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>2-tuple of array_like, optional</li>
 <li>2-tuple of <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>2-tuple or None</li>
 <li>2-tuple or None</li>
 </ul>
 </td>
 </tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>2-tuple, optional</li>
+<li>2-tuple, optional</li>
+</ul>
+</td>
+</tr>
 <tr class="row-even"><td><ul class="first last simple">
-<li>2-tuple, optional</li>
-<li>2-tuple, optional</li>
+<li>2D array with shape (len(y), len(x))</li>
+<li>2D <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a> with shape (len(y), len(x))</li>
 </ul>
 </td>
 </tr>
@@ -569,14 +846,26 @@
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>2d array</li>
+<li>2d <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
 <li>2d array_like</li>
 <li>2d <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>2d ndarray</li>
 <li>2d <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>2d ndarray with shape (N*N, N*N)</li>
+<li>2d <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> with shape (N*N, N*N)</li>
 </ul>
 </td>
 </tr>
@@ -617,8 +906,32 @@
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>An N x N matrix, array, sparse matrix, or linear operator representing</li>
+<li>An N x N <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a>, <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a>, <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.spmatrix.html#scipy.sparse.spmatrix" title="(in SciPy v1.0.0)">sparse</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a>, or linear operator representing</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>AttrDict or dict</li>
+<li>AttrDict or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.6)">dict</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>BPoly</li>
 <li>BPoly</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>BSpline object</li>
+<li>BSpline <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)">object</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>Bunch object</li>
+<li>Bunch <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)">object</a></li>
 </ul>
 </td>
 </tr>
@@ -629,20 +942,32 @@
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>ClusterNode or tuple (ClusterNode, list of ClusterNode)</li>
+<li>ClusterNode or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.6)">tuple</a> (ClusterNode, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.6)">list</a> of ClusterNode)</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
 <li>Data</li>
 <li>Data</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>Data class instance</li>
 <li>Data <a class="reference external" href="https://docs.python.org/3/glossary.html#term-class" title="(in Python v3.6)"><span>class</span></a> instance</li>
 </ul>
 </td>
 </tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>Don't know</li>
+<li>Don't know</li>
+</ul>
+</td>
+</tr>
 <tr class="row-odd"><td><ul class="first last simple">
-<li>Don't know</li>
-<li>Don't know</li>
+<li>ExpFormat</li>
+<li>ExpFormat</li>
 </ul>
 </td>
 </tr>
@@ -653,20 +978,32 @@
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
-<li>HBInfo, optional</li>
-<li>HBInfo, optional</li>
+<li>HBInfo instance</li>
+<li>HBInfo instance</li>
 </ul>
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
+<li>HBInfo, optional</li>
+<li>HBInfo, optional</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>HBMatrixType</li>
 <li>HBMatrixType</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>If dtype is not specified, the current dtype will be preserved.</li>
 <li>If <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.dtype.html#numpy.dtype" title="(in NumPy v1.14)">dtype</a> is not specified, the current <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.dtype.html#numpy.dtype" title="(in NumPy v1.14)">dtype</a> will be preserved.</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>IntFormat</li>
+<li>IntFormat</li>
 </ul>
 </td>
 </tr>
@@ -713,6 +1050,18 @@
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>MaskedArray</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/maskedarray.baseclass.html#numpy.ma.MaskedArray" title="(in NumPy v1.14)">MaskedArray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>MatFileReader object</li>
+<li>MatFileReader <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)">object</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>Model</li>
 <li>Model</li>
 </ul>
@@ -725,92 +1074,128 @@
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
-<li>None (deprecated), 'less', 'two-sided', or 'greater'</li>
-<li>None (deprecated), 'less', 'two-sided', or 'greater'</li>
+<li>Model instance</li>
+<li>Model instance</li>
 </ul>
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
+<li>N x N matrix, array, sparse matrix, or LinearOperator</li>
+<li>N x N <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a>, <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a>, <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.spmatrix.html#scipy.sparse.spmatrix" title="(in SciPy v1.0.0)">sparse</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a>, or LinearOperator</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>NdPPoly</li>
+<li>NdPPoly</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>NdPPoly or array-like</li>
+<li>NdPPoly or <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span class="xref std std-term">array-like</span></a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>None</li>
+<li>None</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>None (deprecated), 'less', 'two-sided', or 'greater'</li>
+<li>None (deprecated), 'less', 'two-sided', or 'greater'</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>None or (lower limit, upper limit), optional</li>
 <li>None or (lower limit, upper limit), optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>None or M-length sequence or MxM array, optional</li>
 <li>None or M-length <a class="reference external" href="https://docs.python.org/3/glossary.html#term-sequence" title="(in Python v3.6)"><span>sequence</span></a> or MxM <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>None or <cite>np.random.RandomState</cite> instance, optional</li>
 <li>None or <cite>np.random.RandomState</cite> instance, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>None or <cite>np.random.RandomState</cite> object</li>
 <li>None or <cite>np.random.RandomState</cite> <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)">object</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>None or array_like, optional</li>
 <li>None or <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>None or bool, optional</li>
 <li>None or <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.6)">bool</a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>None or float, optional</li>
 <li>None or <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>None or int or <code class="docutils literal"><span class="pre">np.random.RandomState</span></code> instance, optional</li>
 <li>None or <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> or <code class="docutils literal"><span class="pre">np.random.RandomState</span></code> instance, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>None or int or <code class="docutils literal"><span class="pre">numpy.random.RandomState</span></code> instance, optional</li>
 <li>None or <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> or <code class="docutils literal"><span class="pre">numpy.random.RandomState</span></code> instance, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>None or int or array_like of ints. Default: None.</li>
 <li>None or <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> or <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> of ints. Default: None.</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>None or int or np.random.RandomState instance, optional</li>
 <li>None or <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> or np.random.RandomState instance, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>None or int or tuple of int or 'mid', optional</li>
 <li>None or <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.6)">tuple</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> or 'mid', optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>None or int or tuple of ints, optional</li>
 <li>None or <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.6)">tuple</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">ints</a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>None or int, optional</li>
 <li>None or <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a>, optional</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>None or ndarray or EmptyStructMarker</li>
+<li>None or <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> or EmptyStructMarker</li>
 </ul>
 </td>
 </tr>
@@ -869,8 +1254,20 @@
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>OptimizeResult</li>
+<li>OptimizeResult</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
 <li>Output</li>
 <li>Output</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>Output instance</li>
+<li>Output instance</li>
 </ul>
 </td>
 </tr>
@@ -893,8 +1290,20 @@
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>Python string</li>
+<li>Python <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">string</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
 <li>Python string or unicode</li>
 <li>Python <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">string</a> or unicode</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>RootResults (present if <code class="docutils literal"><span class="pre">full_output</span> <span class="pre">=</span> <span class="pre">True</span></code>)</li>
+<li>RootResults (present if <code class="docutils literal"><span class="pre">full_output</span> <span class="pre">=</span> <span class="pre">True</span></code>)</li>
 </ul>
 </td>
 </tr>
@@ -905,8 +1314,20 @@
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>UnivariateSpline</li>
+<li>UnivariateSpline</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
 <li>*args, optional</li>
 <li>*args, optional</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li><cite>MetaData</cite></li>
+<li><cite>MetaData</cite></li>
 </ul>
 </td>
 </tr>
@@ -923,26 +1344,62 @@
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
+<li><code class="docutils literal"><span class="pre">scipy.sparse.coo_matrix</span></code></li>
+<li><code class="docutils literal"><span class="pre">scipy.sparse.coo_matrix</span></code></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li><cite>self</cite> with the dimensions reversed.</li>
+<li><cite>self</cite> with the dimensions reversed.</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li><cite>self</cite> with the new dimensions of <cite>shape</cite></li>
+<li><cite>self</cite> with the new dimensions of <cite>shape</cite></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>a BSpline object of the degree <code class="docutils literal"><span class="pre">k</span></code> and with knots <code class="docutils literal"><span class="pre">t</span></code>.</li>
+<li>a BSpline <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)">object</a> of the degree <code class="docutils literal"><span class="pre">k</span></code> and with knots <code class="docutils literal"><span class="pre">t</span></code>.</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>a BSpline object of the degree <cite>k</cite> with knots <cite>t</cite>.</li>
+<li>a BSpline <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)">object</a> of the degree <cite>k</cite> with knots <cite>t</cite>.</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>a dense or sparse square numpy matrix or ndarray</li>
 <li>a dense or <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.spmatrix.html#scipy.sparse.spmatrix" title="(in SciPy v1.0.0)">sparse</a> square numpy <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a> or <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>a sparse matrix</li>
 <li>a <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.spmatrix.html#scipy.sparse.spmatrix" title="(in SciPy v1.0.0)">sparse</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>a square ndarray or matrix or sparse matrix</li>
 <li>a square <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> or <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a> or <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.spmatrix.html#scipy.sparse.spmatrix" title="(in SciPy v1.0.0)">sparse</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>a tuple describing the system or an instance of <cite>lti</cite></li>
 <li>a <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.6)">tuple</a> describing the system or an instance of <cite>lti</cite></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>an array of shape (N, 3)</li>
+<li>an <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a> of shape (N, 3)</li>
 </ul>
 </td>
 </tr>
@@ -995,26 +1452,38 @@
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
+<li>array of dtype float</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a> of <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.dtype.html#numpy.dtype" title="(in NumPy v1.14)">dtype</a> <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array of floats of shape (ndim,)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">floats</a> of shape (ndim,)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array of floats of shape (npoints, ndim)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">floats</a> of shape (npoints, ndim)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array of ints, optional</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">ints</a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array or list of arrays</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.6)">list</a> of arrays</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>array or matrix</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a> or <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a></li>
 </ul>
 </td>
 </tr>
@@ -1025,386 +1494,398 @@
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>array, shape (len(t), len(y0))</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a>, shape (len(t), len(y0))</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
 <li>array-like</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span class="xref std std-term">array-like</span></a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array-like or (array-like, array_like) or &quot;extrapolate&quot;, optional</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span class="xref std std-term">array-like</span></a> or (<a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span class="xref std std-term">array-like</span></a>, <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>) or &quot;extrapolate&quot;, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array-like, optional</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span class="xref std std-term">array-like</span></a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like (1D or 2D), optional</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> (1D or 2D), optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like (1D), optional</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> (1D), optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like (cast to booleans)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> (cast to booleans)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like (cast to booleans), optional</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> (cast to booleans), optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like (n-dimensional), optional</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> (n-dimensional), optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like of booleans</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> of booleans</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like of bools</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> of bools</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like of complex</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.6)">complex</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like of float</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like of floats of rank-1, optional</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">floats</a> of rank-1, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like of int</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like of ints</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">ints</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like of ints of rank-1, optional</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">ints</a> of rank-1, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like of ints with same shape as data.x, optional</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">ints</a> with same shape as data.x, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like of ints, optional</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">ints</a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like of rank 1</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> of rank 1</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like of rank-1</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> of rank-1</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like of shape (N + 1, N), optional</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> of shape (N + 1, N), optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like of shape (n,) or float</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> of shape (n,) or <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like or 'jac', optional</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> or 'jac', optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like or None</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> or None</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like or None, optional</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> or None, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like or float</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> or <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like or float &gt; 0</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> or <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a> &gt; 0</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like or float, probably int &gt;= 1</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> or <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a>, probably <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> &gt;= 1</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like or list of array_likes</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.6)">list</a> of array_likes</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like or sparse matrix, 2 dimensions</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> or <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.spmatrix.html#scipy.sparse.spmatrix" title="(in SciPy v1.0.0)">sparse</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a>, 2 dimensions</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like or sparse matrix, shape (m, n)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> or <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.spmatrix.html#scipy.sparse.spmatrix" title="(in SciPy v1.0.0)">sparse</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a>, shape (m, n)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like or tuple of (array_like, array_like)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.6)">tuple</a> of (<a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like with shape (N, N)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> with shape (N, N)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like with shape (k,) or None, optional</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> with shape (k,) or None, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like with shape (n, n) or None</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> with shape (n, n) or None</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like with shape (n,) or float</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a> with shape (n,) or <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like, 1-D</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, 1-D</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like, 1-D, optional</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, 1-D, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like, 1D</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, 1D</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like, callable, string, float, or tuple, optional</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, callable, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">string</a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a>, or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.6)">tuple</a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like, int</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like, last dimension self.m</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, last dimension self.m</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like, length N</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, length N</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like, n-dimensional</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, n-dimensional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like, one- or two-dimensional</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, one- or two-dimensional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like, optional</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like, optional  (continuous distributions only).</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, optional  (continuous distributions only).</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like, optional (continuous RVs only)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, optional (continuous RVs only)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like, real-valued</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, real-valued</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like, shape (M, N)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, shape (M, N)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like, shape (m, ...)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, shape (m, ...)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like, shape (m,)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, shape (m,)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like, shape (m1, ..., mn, ...)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, shape (m1, ..., mn, ...)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like, shape (n + k + 1,).</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, shape (n + k + 1,).</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like, shape (n, ...)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, shape (n, ...)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like, shape (n, m)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, shape (n, m)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like, shape (n,)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, shape (n,)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like, shape (n,), optional</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, shape (n,), optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like, shape (nt + k + 1,), optional.</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, shape (nt + k + 1,), optional.</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like, shape tuple + (self.m,)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, shape <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.6)">tuple</a> + (self.m,)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>array_like, shape=(n_corr, n)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, shape=(n_corr, n)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>array_like, sparse matrix of LinearOperator, shape (m, n)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.spmatrix.html#scipy.sparse.spmatrix" title="(in SciPy v1.0.0)">sparse</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a> of LinearOperator, shape (m, n)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>bool</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.6)">bool</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>bool array</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.6)">bool</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a></li>
 </ul>
 </td>
 </tr>
@@ -1691,44 +2172,80 @@
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
+<li>complex ndarray</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.6)">complex</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>complex or float, array_like</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.6)">complex</a> or <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a>, <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a></li>
 </ul>
 </td>
 </tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>complex-valued n-dimensional numpy array</li>
+<li>complex-valued n-dimensional numpy <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a></li>
+</ul>
+</td>
+</tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>coo_matrix or scalar</li>
+<li>coo_matrix or scalar</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>csc_matrix, csr_matrix, bsr_matrix, dia_matrix or coo_matrix</li>
+<li>csc_matrix, csr_matrix, bsr_matrix, dia_matrix or coo_matrix</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>csc_matrix, shape (n * m + k, n * m + k)</li>
+<li>csc_matrix, shape (n * m + k, n * m + k)</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
 <li>data-type, optional</li>
 <li>data-type, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>dense or sparse matrix</li>
 <li>dense or <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.spmatrix.html#scipy.sparse.spmatrix" title="(in SciPy v1.0.0)">sparse</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>diagonals to set</li>
 <li>diagonals to <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#set" title="(in Python v3.6)">set</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>dict</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.6)">dict</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>dict of str-&gt;str</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.6)">dict</a> of str-&gt;str</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>dict or sequence of dict, optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.6)">dict</a> or <a class="reference external" href="https://docs.python.org/3/glossary.html#term-sequence" title="(in Python v3.6)"><span>sequence</span></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.6)">dict</a>, optional</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>dict, only returned if full_output == True</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.6)">dict</a>, only returned if full_output == True</li>
 </ul>
 </td>
 </tr>
@@ -1745,122 +2262,134 @@
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>dok_matrix</li>
+<li>dok_matrix</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
 <li>double</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">double</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>double array of shape (3,)</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">double</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a> of shape (3,)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>double array of shape (npoints, 3)</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">double</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a> of shape (npoints, 3)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>double array of shape (nvertices, 3)</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">double</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a> of shape (nvertices, 3)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>double, optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">double</a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>dtype</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.dtype.html#numpy.dtype" title="(in NumPy v1.14)">dtype</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>dtype character code</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.dtype.html#numpy.dtype" title="(in NumPy v1.14)">dtype</a> character code</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>dtype or str</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.dtype.html#numpy.dtype" title="(in NumPy v1.14)">dtype</a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">str</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>dtype specifier, optional</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.dtype.html#numpy.dtype" title="(in NumPy v1.14)">dtype</a> specifier, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>dtype, optional</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.dtype.html#numpy.dtype" title="(in NumPy v1.14)">dtype</a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>file or str</li>
 <li>file or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">str</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>file-like</li>
 <li><a class="reference external" href="https://docs.python.org/3/glossary.html#term-file-like-object" title="(in Python v3.6)"><span class="xref std std-term">file-like</span></a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>file-like matrix</li>
 <li><a class="reference external" href="https://docs.python.org/3/glossary.html#term-file-like-object" title="(in Python v3.6)"><span class="xref std std-term">file-like</span></a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>file-like or str</li>
 <li><a class="reference external" href="https://docs.python.org/3/glossary.html#term-file-like-object" title="(in Python v3.6)"><span class="xref std std-term">file-like</span></a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">str</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>file-object</li>
 <li>file-object</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>file_like</li>
 <li><a class="reference external" href="https://docs.python.org/3/glossary.html#term-file-like-object" title="(in Python v3.6)"><span class="xref std std-term">file_like</span></a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>file_like object</li>
 <li><a class="reference external" href="https://docs.python.org/3/glossary.html#term-file-like-object" title="(in Python v3.6)"><span class="xref std std-term">file_like</span></a> <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)">object</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>float</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>float (&gt;=0)</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a> (&gt;=0)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>float or (float, float), optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a> or (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a>), optional</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>float or 1D array</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a> or 1D <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a></li>
 </ul>
 </td>
 </tr>
@@ -1871,20 +2400,44 @@
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
+<li>float or None</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a> or None</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>float or None, optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a> or None, optional</li>
 </ul>
 </td>
 </tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>float or array</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a> or <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a></li>
+</ul>
+</td>
+</tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>float or array of floats</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a> or <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">floats</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
 <li>float or array_like</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a> or <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>float or complex</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a> or <a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.6)">complex</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>float or complex ndarray</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a> or <a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.6)">complex</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
 </ul>
 </td>
 </tr>
@@ -1895,14 +2448,38 @@
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
+<li>float or int or ndarray</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a> or <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> or <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>float or int, optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a> or <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>float or int, or sequence of same, optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a> or <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a>, or <a class="reference external" href="https://docs.python.org/3/glossary.html#term-sequence" title="(in Python v3.6)"><span>sequence</span></a> of same, optional</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>float or list of floats</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.6)">list</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">floats</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>float or ndarray</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a> or <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>float or ndarray (2-D square)</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a> or <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> (2-D square)</li>
 </ul>
 </td>
 </tr>
@@ -1955,20 +2532,32 @@
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
+<li>float, (0: solver-determined), optional</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a>, (0: solver-determined), optional</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>float, 1 &lt;= p &lt;= infinity</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a>, 1 &lt;= p &lt;= infinity</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>float, 1&lt;=p&lt;=infinity, optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a>, 1&lt;=p&lt;=infinity, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>float, int or None, optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> or None, optional</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>float, int or ndarray</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> or <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
 </ul>
 </td>
 </tr>
@@ -2027,6 +2616,18 @@
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
+<li>if decomposition fails.</li>
+<li>if decomposition fails.</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>if the dimensionality of the input points is different than</li>
+<li>if the dimensionality of the input points is different than</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
 <li>indexable</li>
 <li>indexable</li>
 </ul>
@@ -2039,38 +2640,62 @@
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
-<li>instance of <cite>ZerosPolesGain</cite></li>
-<li>instance of <cite>ZerosPolesGain</cite></li>
+<li>instance of <cite>TransferFunction</cite></li>
+<li>instance of <cite>TransferFunction</cite></li>
 </ul>
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>instance of <cite>ZerosPolesGain</cite></li>
+<li>instance of <cite>ZerosPolesGain</cite></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
 <li>instance with &quot;write&quot; method, optional</li>
 <li>instance with &quot;write&quot; method, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>int</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>int (cast to 0 or 1), optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> (cast to 0 or 1), optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>int &gt;= 0, &lt; kx</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> &gt;= 0, &lt; kx</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>int &gt;= 0, &lt; ky</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> &gt;= 0, &lt; ky</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>int ndarray</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>int or 1-D array of ints</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> or 1-D <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">ints</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>int or None</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> or None</li>
 </ul>
 </td>
 </tr>
@@ -2135,62 +2760,74 @@
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
+<li>int or ndarray of ints</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> or <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">ints</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>int or ndarray, optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> or <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>int or sequence</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> or <a class="reference external" href="https://docs.python.org/3/glossary.html#term-sequence" title="(in Python v3.6)"><span>sequence</span></a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>int or sequence of int, optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> or <a class="reference external" href="https://docs.python.org/3/glossary.html#term-sequence" title="(in Python v3.6)"><span>sequence</span></a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>int or sequence of ints, optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> or <a class="reference external" href="https://docs.python.org/3/glossary.html#term-sequence" title="(in Python v3.6)"><span>sequence</span></a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">ints</a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>int or sequence of scalars, optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> or <a class="reference external" href="https://docs.python.org/3/glossary.html#term-sequence" title="(in Python v3.6)"><span>sequence</span></a> of scalars, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>int or str, optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">str</a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>int or tuple of int</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.6)">tuple</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>int or tuple of ints</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.6)">tuple</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">ints</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>int or tuple of ints, optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.6)">tuple</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">ints</a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>int or tuple of two ints, optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.6)">tuple</a> of two <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">ints</a>, optional</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>int, (0: solver-determined), optional</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a>, (0: solver-determined), optional</li>
 </ul>
 </td>
 </tr>
@@ -2219,86 +2856,98 @@
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
+<li>int, if full_output is true</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a>, if full_output is true</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>int, iterable of int with shape (n,) or None</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a>, <a class="reference external" href="https://docs.python.org/3/glossary.html#term-iterable" title="(in Python v3.6)"><span>iterable</span></a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a> with shape (n,) or None</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>int, n &gt;= 1</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a>, n &gt;= 1</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>int, ndarray</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a>, <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>int, optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>int, sequence of ints or None</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a>, <a class="reference external" href="https://docs.python.org/3/glossary.html#term-sequence" title="(in Python v3.6)"><span>sequence</span></a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">ints</a> or None</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>int, sequence, 'default', optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a>, <a class="reference external" href="https://docs.python.org/3/glossary.html#term-sequence" title="(in Python v3.6)"><span>sequence</span></a>, 'default', optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>int, tuple of ints, optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.6)">tuple</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">ints</a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>int, {0, 1}</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a>, {0, 1}</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>int, {1, 2, 3, 4}, optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a>, {1, 2, 3, 4}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>int, {1, 2}, optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a>, {1, 2}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>int64 ndarray, optional</li>
 <li>int64 <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>integer</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">integer</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>integer : optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">integer</a> : optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>integer greater than 1</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">integer</a> greater than 1</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>integer or array of integers</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">integer</a> or <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">integers</a></li>
 </ul>
 </td>
 </tr>
@@ -2405,20 +3054,56 @@
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>list of lists</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.6)">list</a> of lists</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>list of ndarray, optional</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.6)">list</a> of <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, optional</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>list of ndarrays</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.6)">list</a> of ndarrays</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
 <li>list of str</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.6)">list</a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">str</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>list of str or None</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.6)">list</a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">str</a> or None</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>list of str, optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.6)">list</a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">str</a>, optional</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>list of strings</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.6)">list</a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">strings</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>list of tuples</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.6)">list</a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.6)">tuples</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>list of tuples of ints</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.6)">list</a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.6)">tuples</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">ints</a></li>
 </ul>
 </td>
 </tr>
@@ -2429,26 +3114,50 @@
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>list or None</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.6)">list</a> or None</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>list or array of lists</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.6)">list</a> or <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a> of lists</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>list(str)</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.6)">list</a>(<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">str</a>)</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
 <li>list, optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.6)">list</a>, optional</li>
 </ul>
 </td>
 </tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>mapping</li>
+<li>mapping</li>
+</ul>
+</td>
+</tr>
 <tr class="row-even"><td><ul class="first last simple">
-<li>mapping</li>
-<li>mapping</li>
+<li>matplotlib Axes instance, optional</li>
+<li>matplotlib Axes instance, optional</li>
 </ul>
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
-<li>matplotlib Axes instance, optional</li>
-<li>matplotlib Axes instance, optional</li>
+<li>matplotlib.axes.Axes instance, optional</li>
+<li><a class="reference external" href="https://matplotlib.org/api/axes_api.html#matplotlib.axes.Axes" title="(in Matplotlib v2.1.1)">matplotlib.axes.Axes</a> instance, optional</li>
 </ul>
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
-<li>matplotlib.axes.Axes instance, optional</li>
-<li><a class="reference external" href="https://matplotlib.org/api/axes_api.html#matplotlib.axes.Axes" title="(in Matplotlib v2.1.1)">matplotlib.axes.Axes</a> instance, optional</li>
+<li>matplotlib.figure.Figure instance</li>
+<li><a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="(in Matplotlib v2.1.1)">matplotlib.figure.Figure</a> instance</li>
 </ul>
 </td>
 </tr>
@@ -2477,8 +3186,32 @@
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>ndarray of bool, shape (n,)</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.6)">bool</a>, shape (n,)</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>ndarray of bools</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> of bools</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>ndarray of float</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
 <li>ndarray of float or complex, shape (n,)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a> or <a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.6)">complex</a>, shape (n,)</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>ndarray of float, if full_output is true</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a>, if full_output is true</li>
 </ul>
 </td>
 </tr>
@@ -2491,6 +3224,18 @@
 <tr class="row-odd"><td><ul class="first last simple">
 <li>ndarray of float, shape (M, D)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a>, shape (M, D)</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>ndarray of float64</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> of float64</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>ndarray of floats</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">floats</a></li>
 </ul>
 </td>
 </tr>
@@ -2513,8 +3258,32 @@
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>ndarray of int, shape (n,)</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a>, shape (n,)</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
 <li>ndarray of ints</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">ints</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>ndarray of rank 1</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> of rank 1</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>ndarray of real</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> of real</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>ndarray of reals</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> of reals</li>
 </ul>
 </td>
 </tr>
@@ -2537,14 +3306,62 @@
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>ndarray or None</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> or None</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>ndarray or None, shape (k,)</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> or None, shape (k,)</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>ndarray or coo_matrix</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> or coo_matrix</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>ndarray or csr_matrix</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> or csr_matrix</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>ndarray or dtype, optional</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> or <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.dtype.html#numpy.dtype" title="(in NumPy v1.14)">dtype</a>, optional</li>
 </ul>
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
+<li>ndarray or float</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> or <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>ndarray or int</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> or <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>ndarray or list of ndarrays</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.6)">list</a> of ndarrays</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>ndarray or other linear operator</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> or other linear operator</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>ndarray or scalar</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> or scalar</li>
 </ul>
 </td>
 </tr>
@@ -2557,6 +3374,18 @@
 <tr class="row-even"><td><ul class="first last simple">
 <li>ndarray or the string 'cutoff'</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> or the <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">string</a> 'cutoff'</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>ndarray representing a square matrix</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> representing a square <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>ndarray with shape (k,) or float</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> with shape (k,) or <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a></li>
 </ul>
 </td>
 </tr>
@@ -2585,20 +3414,44 @@
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>ndarray, 2-dimensional</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, 2-dimensional</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
 <li>ndarray, 2-dimensional, optional</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, 2-dimensional, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>ndarray, MxN or MxNx3 or MxNx4</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, MxN or MxNx3 or MxNx4</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>ndarray, None</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, None</li>
 </ul>
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
 <li>ndarray, optional</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, optional</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>ndarray, same shape as <cite>observed</cite></li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, same shape as <cite>observed</cite></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>ndarray, same shape as <cite>x</cite></li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, same shape as <cite>x</cite></li>
 </ul>
 </td>
 </tr>
@@ -2657,128 +3510,176 @@
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>ndarray, shape (m - 1,)</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, shape (m - 1,)</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
 <li>ndarray, shape (m+1,)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, shape (m+1,)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>ndarray, shape (m, )</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, shape (m, )</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>ndarray, shape (m, ...)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, shape (m, ...)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>ndarray, shape (m,)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, shape (m,)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>ndarray, shape (m-1,)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, shape (m-1,)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>ndarray, shape (n+k+1,)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, shape (n+k+1,)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>ndarray, shape (n, m)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, shape (n, m)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>ndarray, shape (n, n)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, shape (n, n)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>ndarray, shape (n, n, m - 1)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, shape (n, n, m - 1)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>ndarray, shape (n, n, m)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, shape (n, n, m)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>ndarray, shape (n,)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, shape (n,)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>ndarray, shape (n,), optional</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, shape (n,), optional</li>
 </ul>
 </td>
 </tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>ndarray, shape xi.shape[:-1] + values.shape[ndim:]</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, shape xi.shape[:-1] + values.shape[ndim:]</li>
+</ul>
+</td>
+</tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>ndarray, shape(k+1,)</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, shape(k+1,)</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>ndarray, shape(nx1, nx2, nx3,...)</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, shape(nx1, nx2, nx3,...)</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>ndarray, shape=(M, k)</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, shape=(M, k)</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>ndarray, shape=(k, N)</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, shape=(k, N)</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>ndarray, shape=(k,)</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, shape=(k,)</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
 <li>ndarray, size (k, m, ...)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, size (k, m, ...)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>ndarray, size (m,)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, size (m,)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>ndarray, sparse matrix or LinearOperator</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.spmatrix.html#scipy.sparse.spmatrix" title="(in SciPy v1.0.0)">sparse</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a> or LinearOperator</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>ndarray, sparse matrix or LinearOperator shape (m, n)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.spmatrix.html#scipy.sparse.spmatrix" title="(in SciPy v1.0.0)">sparse</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a> or LinearOperator shape (m, n)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>ndarray, sparse matrix or LinearOperator, optional</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.spmatrix.html#scipy.sparse.spmatrix" title="(in SciPy v1.0.0)">sparse</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a> or LinearOperator, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>ndarray, sparse matrix or LinearOperator, shape (m, n)</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.spmatrix.html#scipy.sparse.spmatrix" title="(in SciPy v1.0.0)">sparse</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a> or LinearOperator, shape (m, n)</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>ndim-tuple of 2-tuples float</li>
 <li>ndim-tuple of 2-tuples <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>ndim-tuple of int</li>
 <li>ndim-tuple of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a></li>
 </ul>
 </td>
 </tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>ndim-tuple of ndarrays, shapes (mj+1,)</li>
+<li>ndim-tuple of ndarrays, shapes (mj+1,)</li>
+</ul>
+</td>
+</tr>
 <tr class="row-odd"><td><ul class="first last simple">
-<li>ndim-tuple of ndarrays, shapes (mj+1,)</li>
-<li>ndim-tuple of ndarrays, shapes (mj+1,)</li>
+<li>netcdf_variable</li>
+<li>netcdf_variable</li>
 </ul>
 </td>
 </tr>
@@ -2795,32 +3696,56 @@
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
+<li>np.matrix</li>
+<li>np.matrix</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>np.matrix, optional</li>
 <li>np.matrix, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>np.random.RandomState instance</li>
 <li>np.random.RandomState instance</li>
 </ul>
 </td>
 </tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>number</li>
+<li>number</li>
+</ul>
+</td>
+</tr>
 <tr class="row-even"><td><ul class="first last simple">
-<li>number</li>
-<li>number</li>
+<li>number, optional</li>
+<li>number, optional</li>
 </ul>
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
-<li>number, optional</li>
-<li>number, optional</li>
+<li>numpy array</li>
+<li>numpy <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a></li>
 </ul>
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
+<li>numpy.matrix, 2-dimensional</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">numpy.matrix</a>, 2-dimensional</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>numpy.ndarray</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">numpy.ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>numpy.poly1d instance</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.poly1d.html#numpy.poly1d" title="(in NumPy v1.14)">numpy.poly1d</a> instance</li>
 </ul>
 </td>
 </tr>
@@ -2849,6 +3774,18 @@
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>orthopoly1d</li>
+<li>orthopoly1d</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>poly1d instance</li>
+<li>poly1d instance</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>positive float</li>
 <li>positive <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a></li>
 </ul>
@@ -2867,32 +3804,80 @@
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
+<li>real</li>
+<li>real</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>real ndarray</li>
+<li>real <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>real or complex array</li>
+<li>real or <a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.6)">complex</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>real or complex, optional</li>
 <li>real or <a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.6)">complex</a>, optional</li>
 </ul>
 </td>
 </tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>real, optional</li>
+<li>real, optional</li>
+</ul>
+</td>
+</tr>
 <tr class="row-odd"><td><ul class="first last simple">
-<li>real, optional</li>
-<li>real, optional</li>
+<li>record array</li>
+<li>record <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a></li>
 </ul>
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
+<li>rv_frozen instance</li>
+<li>rv_frozen instance</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>scalar</li>
 <li>scalar</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>scalar or 1-D ndarray</li>
 <li>scalar or 1-D <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>scalar or array_like</li>
 <li>scalar or <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>scalar or ndarray</li>
+<li>scalar or <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>scalar or ndarray of scalars</li>
+<li>scalar or <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> of scalars</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>scalar or ndarray of scalars, optional</li>
+<li>scalar or <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a> of scalars, optional</li>
 </ul>
 </td>
 </tr>
@@ -2917,6 +3902,18 @@
 <tr class="row-even"><td><ul class="first last simple">
 <li>scipy.cluster.linkage array</li>
 <li>scipy.cluster.linkage <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>scipy.sparse.csc_matrix instance</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csc_matrix.html#scipy.sparse.csc_matrix" title="(in SciPy v1.0.0)">scipy.sparse.csc_matrix</a> instance</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>scipy.sparse.linalg.SuperLU</li>
+<li><a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.linalg.SuperLU.html#scipy.sparse.linalg.SuperLU" title="(in SciPy v1.0.0)">scipy.sparse.linalg.SuperLU</a></li>
 </ul>
 </td>
 </tr>
@@ -3023,38 +4020,50 @@
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
+<li>set</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#set" title="(in Python v3.6)">set</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>slice</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/functions.html#slice" title="(in Python v3.6)">slice</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>sparse matrix</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.spmatrix.html#scipy.sparse.spmatrix" title="(in SciPy v1.0.0)">sparse</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>sparse or dense matrix</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.spmatrix.html#scipy.sparse.spmatrix" title="(in SciPy v1.0.0)">sparse</a> or dense <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a></li>
 </ul>
 </td>
 </tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>sparse-matrix</li>
+<li>sparse-matrix</li>
+</ul>
+</td>
+</tr>
 <tr class="row-odd"><td><ul class="first last simple">
-<li>sparse-matrix</li>
-<li>sparse-matrix</li>
+<li>spmatrix (format: <code class="docutils literal"><span class="pre">csc</span></code>, <code class="docutils literal"><span class="pre">csr</span></code>, <code class="docutils literal"><span class="pre">bsr</span></code>, <code class="docutils literal"><span class="pre">dia</span></code> or coo``)</li>
+<li>spmatrix (format: <code class="docutils literal"><span class="pre">csc</span></code>, <code class="docutils literal"><span class="pre">csr</span></code>, <code class="docutils literal"><span class="pre">bsr</span></code>, <code class="docutils literal"><span class="pre">dia</span></code> or coo``)</li>
 </ul>
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
-<li>spmatrix (format: <code class="docutils literal"><span class="pre">csc</span></code>, <code class="docutils literal"><span class="pre">csr</span></code>, <code class="docutils literal"><span class="pre">bsr</span></code>, <code class="docutils literal"><span class="pre">dia</span></code> or coo``)</li>
-<li>spmatrix (format: <code class="docutils literal"><span class="pre">csc</span></code>, <code class="docutils literal"><span class="pre">csr</span></code>, <code class="docutils literal"><span class="pre">bsr</span></code>, <code class="docutils literal"><span class="pre">dia</span></code> or coo``)</li>
+<li>str</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">str</a></li>
 </ul>
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
-<li>str</li>
-<li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">str</a></li>
+<li>str ['LM' | 'SM' | 'LA' | 'SA' | 'BE']</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">str</a> ['LM' | 'SM' | 'LA' | 'SA' | 'BE']</li>
 </ul>
 </td>
 </tr>
@@ -3233,44 +4242,56 @@
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>string ['normal' | 'buckling' | 'cayley']</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">string</a> ['normal' | 'buckling' | 'cayley']</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
 <li>string or (string, float) or float, or None, optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">string</a> or (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">string</a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a>) or <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a>, or None, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>string or 2-tuple, optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">string</a> or 2-tuple, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>string or callable, optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">string</a> or callable, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>string or file-like</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">string</a> or <a class="reference external" href="https://docs.python.org/3/glossary.html#term-file-like-object" title="(in Python v3.6)"><span class="xref std std-term">file-like</span></a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>string or open file handle</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">string</a> or open file handle</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>string or tuple of string and parameter values, optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">string</a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.6)">tuple</a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">string</a> and parameter values, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>string, float, or tuple</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">string</a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a>, or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.6)">tuple</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>string, if full_output is true</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">string</a>, if full_output is true</li>
 </ul>
 </td>
 </tr>
@@ -3335,8 +4356,20 @@
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
+<li>tuple containing the discrete system</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.6)">tuple</a> containing the discrete system</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>tuple of (t, c, k)</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.6)">tuple</a> of (t, c, k)</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>tuple of (t2, c2, k2)</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.6)">tuple</a> of (t2, c2, k2)</li>
 </ul>
 </td>
 </tr>
@@ -3401,14 +4434,26 @@
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>tuple of ndarrays or floats</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.6)">tuple</a> of ndarrays or <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">floats</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
 <li>tuple of two array_like, optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.6)">tuple</a> of two <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>tuple, optional</li>
 <li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.6)">tuple</a>, optional</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>tuple, or list of tuples</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.6)">tuple</a>, or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.6)">list</a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.6)">tuples</a></li>
 </ul>
 </td>
 </tr>
@@ -3419,140 +4464,152 @@
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
+<li>uint8 ndarray</li>
+<li>uint8 <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>various types</li>
 <li>various types</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>{ 'density', 'spectrum' }, optional</li>
 <li>{ 'density', 'spectrum' }, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>{&quot;del2&quot;, &quot;iteration&quot;}, optional</li>
 <li>{&quot;del2&quot;, &quot;iteration&quot;}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>{&quot;dia&quot;, &quot;csr&quot;, &quot;csc&quot;, &quot;lil&quot;, ...}, optional</li>
 <li>{&quot;dia&quot;, &quot;csr&quot;, &quot;csc&quot;, &quot;lil&quot;, ...}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>{&quot;gbt&quot;, &quot;bilinear&quot;, &quot;euler&quot;, &quot;backward_diff&quot;, &quot;zoh&quot;}, optional</li>
 <li>{&quot;gbt&quot;, &quot;bilinear&quot;, &quot;euler&quot;, &quot;backward_diff&quot;, &quot;zoh&quot;}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>{'1-sided', '2-sided'}</li>
 <li>{'1-sided', '2-sided'}</li>
 </ul>
 </td>
 </tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>{'2-point', '3-point', 'cs', callable}, optional</li>
+<li>{'2-point', '3-point', 'cs', callable}, optional</li>
+</ul>
+</td>
+</tr>
 <tr class="row-even"><td><ul class="first last simple">
-<li>{'2-point', '3-point', 'cs', callable}, optional</li>
-<li>{'2-point', '3-point', 'cs', callable}, optional</li>
+<li>{'3-point', '2-point'}, optional</li>
+<li>{'3-point', '2-point'}, optional</li>
 </ul>
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
-<li>{'3-point', '2-point'}, optional</li>
-<li>{'3-point', '2-point'}, optional</li>
-</ul>
-</td>
-</tr>
-<tr class="row-even"><td><ul class="first last simple">
 <li>{'5', '4'}, string, optional</li>
 <li>{'5', '4'}, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)">string</a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>{'&lt;', '&gt;'}</li>
 <li>{'&lt;', '&gt;'}</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>{'C', 'F'}, optional</li>
 <li>{'C', 'F'}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>{'YT', 'KNV0'}, optional</li>
 <li>{'YT', 'KNV0'}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>{'a', 'v', 'i'}, optional</li>
 <li>{'a', 'v', 'i'}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>{'ba', 'zpk', 'sos'}, optional</li>
 <li>{'ba', 'zpk', 'sos'}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>{'bandpass', 'differentiator', 'hilbert'}, optional</li>
 <li>{'bandpass', 'differentiator', 'hilbert'}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>{'bandpass', 'lowpass', 'highpass', 'bandstop'}, optional</li>
 <li>{'bandpass', 'lowpass', 'highpass', 'bandstop'}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>{'bsr', 'coo', 'csc', 'csr', 'dia', 'dok', 'lil'}, optional</li>
 <li>{'bsr', 'coo', 'csc', 'csr', 'dia', 'dok', 'lil'}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>{'butter', 'cheby', 'ellip'}</li>
 <li>{'butter', 'cheby', 'ellip'}</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>{'chessboard', 'taxicab'}, optional</li>
 <li>{'chessboard', 'taxicab'}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>{'column', 'row'}, optional</li>
 <li>{'column', 'row'}, optional</li>
 </ul>
 </td>
 </tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>{'direct', 'bilinear'}, optional</li>
+<li>{'direct', 'bilinear'}, optional</li>
+</ul>
+</td>
+</tr>
 <tr class="row-even"><td><ul class="first last simple">
-<li>{'direct', 'bilinear'}, optional</li>
-<li>{'direct', 'bilinear'}, optional</li>
+<li>{'f', 'd', 'F', 'D', None}, optional</li>
+<li>{'f', 'd', 'F', 'D', None}, optional</li>
 </ul>
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
-<li>{'f', 'd', 'F', 'D', None}, optional</li>
-<li>{'f', 'd', 'F', 'D', None}, optional</li>
+<li>{'f', 'd', 'F', 'D'}</li>
+<li>{'f', 'd', 'F', 'D'}</li>
 </ul>
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
-<li>{'f', 'd', 'F', 'D'}</li>
-<li>{'f', 'd', 'F', 'D'}</li>
+<li>{'f','d','F','D'}</li>
+<li>{'f','d','F','D'}</li>
 </ul>
 </td>
 </tr>
@@ -3815,230 +4872,242 @@
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
+<li>{0, 1, 2}</li>
+<li>{0, 1, 2}</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
 <li>{0, 1, 2} int</li>
 <li>{0, 1, 2} <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>{0, 1, 2}, optional</li>
 <li>{0, 1, 2}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>{0, 1} int</li>
 <li>{0, 1} <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a></li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>{0, float}, optional</li>
 <li>{0, <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a>}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>{0, int}, optional</li>
 <li>{0, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a>}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>{1, -1}, optional</li>
 <li>{1, -1}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>{1, 0, -1}, optional</li>
 <li>{1, 0, -1}, optional</li>
 </ul>
 </td>
 </tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>{1, 2, 3}, optional</li>
+<li>{1, 2, 3}, optional</li>
+</ul>
+</td>
+</tr>
 <tr class="row-odd"><td><ul class="first last simple">
-<li>{1, 2, 3}, optional</li>
-<li>{1, 2, 3}, optional</li>
+<li>{1, 2}, optional</li>
+<li>{1, 2}, optional</li>
 </ul>
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
-<li>{1, 2}, optional</li>
-<li>{1, 2}, optional</li>
-</ul>
-</td>
-</tr>
-<tr class="row-odd"><td><ul class="first last simple">
 <li>{False, True}, boolean, optional</li>
 <li>{False, True}, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.6)">boolean</a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>{False, True}, optional</li>
 <li>{False, True}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>{LinearOperator, Nones}</li>
 <li>{LinearOperator, Nones}</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>{None, 'exact', 'lsmr'}, optional</li>
 <li>{None, 'exact', 'lsmr'}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>{None, 'ortho'}, optional</li>
 <li>{None, 'ortho'}, optional</li>
 </ul>
 </td>
 </tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>{None, True, False}</li>
+<li>{None, True, False}</li>
+</ul>
+</td>
+</tr>
 <tr class="row-even"><td><ul class="first last simple">
-<li>{None, True, False}</li>
-<li>{None, True, False}</li>
+<li>{None, True, False}, optional</li>
+<li>{None, True, False}, optional</li>
 </ul>
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
-<li>{None, True, False}, optional</li>
-<li>{None, True, False}, optional</li>
-</ul>
-</td>
-</tr>
-<tr class="row-even"><td><ul class="first last simple">
 <li>{None, array_like, sparse matrix, 2-tuple}, optional</li>
 <li>{None, <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.spmatrix.html#scipy.sparse.spmatrix" title="(in SciPy v1.0.0)">sparse</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a>, 2-tuple}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>{None, array_like, sparse matrix}, optional</li>
 <li>{None, <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.spmatrix.html#scipy.sparse.spmatrix" title="(in SciPy v1.0.0)">sparse</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a>}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>{None, callable, 'lhp', 'rhp', 'iuc', 'ouc'}, optional</li>
 <li>{None, callable, 'lhp', 'rhp', 'iuc', 'ouc'}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>{None, float}, optional</li>
 <li>{None, <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a>}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>{None, int, array-like}, optional</li>
 <li>{None, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a>, <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span class="xref std std-term">array-like</span></a>}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>{None, int, array_like}, optional</li>
 <li>{None, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a>, <a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>{None, int}, optional</li>
 <li>{None, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)">int</a>}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>{None, scalar}, optional</li>
 <li>{None, scalar}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>{None, tuple of float}, optional</li>
 <li>{None, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.6)">tuple</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a>}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>{None, tuple}, optional</li>
 <li>{None, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.6)">tuple</a>}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>{None,int}, optional</li>
 <li>{None,int}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>{PyCapsule, ctypes function pointer, cffi function pointer}</li>
 <li>{PyCapsule, ctypes function pointer, cffi function pointer}</li>
 </ul>
 </td>
 </tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>{PyCapsule, ctypes void pointer, cffi void pointer}</li>
+<li>{PyCapsule, ctypes void pointer, cffi void pointer}</li>
+</ul>
+</td>
+</tr>
 <tr class="row-even"><td><ul class="first last simple">
-<li>{PyCapsule, ctypes void pointer, cffi void pointer}</li>
-<li>{PyCapsule, ctypes void pointer, cffi void pointer}</li>
+<li>{PyCapsule, ctypes void pointer, cffi void pointer}, optional</li>
+<li>{PyCapsule, ctypes void pointer, cffi void pointer}, optional</li>
 </ul>
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
-<li>{PyCapsule, ctypes void pointer, cffi void pointer}, optional</li>
-<li>{PyCapsule, ctypes void pointer, cffi void pointer}, optional</li>
-</ul>
-</td>
-</tr>
-<tr class="row-even"><td><ul class="first last simple">
 <li>{True, False} bool, optional</li>
 <li>{True, False} <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.6)">bool</a>, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>{True, False}, optional</li>
 <li>{True, False}, optional</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>{array, matrix}</li>
 <li>{<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a>, <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a>}</li>
 </ul>
 </td>
 </tr>
-<tr class="row-odd"><td><ul class="first last simple">
+<tr class="row-even"><td><ul class="first last simple">
 <li>{array_like, None}</li>
 <li>{<a class="reference external" href="https://docs.scipy.org/doc/numpy/glossary.html#term-array-like" title="(in NumPy v1.14)"><span>array_like</span></a>, None}</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>{bool, 'periodic', None}, optional</li>
 <li>{<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.6)">bool</a>, 'periodic', None}, optional</li>
 </ul>
 </td>
 </tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>{callable, 'lhp', 'rhp', 'iuc', 'ouc'}, optional</li>
+<li>{callable, 'lhp', 'rhp', 'iuc', 'ouc'}, optional</li>
+</ul>
+</td>
+</tr>
 <tr class="row-odd"><td><ul class="first last simple">
-<li>{callable, 'lhp', 'rhp', 'iuc', 'ouc'}, optional</li>
-<li>{callable, 'lhp', 'rhp', 'iuc', 'ouc'}, optional</li>
+<li>{csr_matrix, aslinearoperator, asarray}, optional</li>
+<li>{csr_matrix, aslinearoperator, asarray}, optional</li>
 </ul>
 </td>
 </tr>
 <tr class="row-even"><td><ul class="first last simple">
-<li>{csr_matrix, aslinearoperator, asarray}, optional</li>
-<li>{csr_matrix, aslinearoperator, asarray}, optional</li>
+<li>{dense matrix, sparse matrix, LinearOperator}, optional</li>
+<li>{dense <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a>, <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.spmatrix.html#scipy.sparse.spmatrix" title="(in SciPy v1.0.0)">sparse</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a>, LinearOperator}, optional</li>
 </ul>
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
-<li>{dense matrix, sparse matrix, LinearOperator}, optional</li>
-<li>{dense <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a>, <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.spmatrix.html#scipy.sparse.spmatrix" title="(in SciPy v1.0.0)">sparse</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a>, LinearOperator}, optional</li>
+<li>{float, ndarray}</li>
+<li>{<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">float</a>, <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>}</li>
 </ul>
 </td>
 </tr>
@@ -4061,14 +5130,26 @@
 </td>
 </tr>
 <tr class="row-odd"><td><ul class="first last simple">
+<li>{list of floats, masked array}</li>
+<li>{<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.6)">list</a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)">floats</a>, masked <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">array</a>}</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
 <li>{matrix, ndarray}</li>
 <li>{<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a>, <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>}</li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td><ul class="first last simple">
+<tr class="row-odd"><td><ul class="first last simple">
 <li>{matrix, sparse matrix, ndarray, LinearOperator}</li>
 <li>{<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a>, <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.spmatrix.html#scipy.sparse.spmatrix" title="(in SciPy v1.0.0)">sparse</a> <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.14)">matrix</a>, <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, LinearOperator}</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li>{ndarray, list of ndarrays}</li>
+<li>{<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">ndarray</a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.6)">list</a> of ndarrays}</li>
 </ul>
 </td>
 </tr>
