@@ -17,7 +17,7 @@ DOCSTRING_SECTIONS = {
     'yields', 'returns',
     'example', 'examples'}
 
-SPEC_RE = re.compile(r'^\w+\s?: (.+$)')
+SPEC_RE = re.compile(r'^\w+\s:\s(.+$)')
 
 
 def all_docstrings_in_body(ast_body):
