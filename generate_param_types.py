@@ -126,9 +126,12 @@ def main():
         'series': 'pandas.Series',
     }
 
+    xref_ignore = {'default', 'optional'}
+
     def generate_rows(param_types):
         for param_type in sorted(set(param_types)):
-            xref = make_xref_param_type(param_type, xref_aliases)
+            xref = make_xref_param_type(
+                param_type, xref_aliases, xref_ignore)
             row = (f'- {param_type}\n- {xref}',)
             yield row
 

@@ -95,7 +95,7 @@ mizani
 | - :xref_param_type:`list`                                                                                   |
 +-------------------------------------------------------------------------------------------------------------+
 | - list of strings                                                                                           |
-| - :xref_param_type:`list` of :xref_param_type:`strings <str>`                                               |
+| - :xref_param_type:`list` :xref_param_type:`of` :xref_param_type:`strings <str>`                            |
 +-------------------------------------------------------------------------------------------------------------+
 | - list | float                                                                                              |
 | - :xref_param_type:`list` | :xref_param_type:`float`                                                        |

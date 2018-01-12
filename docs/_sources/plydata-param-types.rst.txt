@@ -74,7 +74,7 @@ plydata
 | - :term:`python:iterable`                                                                                                |
 +--------------------------------------------------------------------------------------------------------------------------+
 | - label or list, or array-like                                                                                           |
-| - :xref_param_type:`label` or :xref_param_type:`list`, or :term:`array-like<numpy:array_like>`                           |
+| - :xref_param_type:`label` or :xref_param_type:`list`, :xref_param_type:`or` :term:`array-like<numpy:array_like>`        |
 +--------------------------------------------------------------------------------------------------------------------------+
 | - list                                                                                                                   |
 | - :xref_param_type:`list`                                                                                                |
