@@ -8,7 +8,12 @@ from functools import lru_cache
 from types import ModuleType, MethodType, FunctionType
 
 from plotnine.doctools import docstring_section_lines
-from numpydoc.xref import make_xref_param_type
+
+try:
+    from numpydoc.xref import make_xref
+except ImportError:
+    from numpydoc.xref import make_xref_param_type as make_xref
+
 from tabulate import tabulate
 
 
@@ -130,7 +135,7 @@ def main():
 
     def generate_rows(param_types):
         for param_type in sorted(set(param_types)):
-            xref = make_xref_param_type(
+            xref = make_xref(
                 param_type, xref_aliases, xref_ignore)
             row = (f'- {param_type}\n- {xref}',)
             yield row
